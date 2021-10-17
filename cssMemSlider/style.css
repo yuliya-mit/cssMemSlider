@@ -9,21 +9,22 @@ body {
 }
 
 .slider_wrapper {
-    height: 1700px;
-   
+    height: 900px;
+    overflow: hidden;
     margin: 50px auto 0;
     position: relative;
-    width: 1700px;
+    width: 700px;
 }
 
 .slider {
     background-color: #dddddd;
-   /* overflow: hidden;*/
+    width: 3400px;
+ overflow-y: hidden;
    display: flex;
    flex-direction: row;
     position: relative;
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    height: inherit;
+    height: 700px;
 }
 
 .slider_wrapper > input {
@@ -110,7 +111,15 @@ label {
     transform: translate(0);
   }
   #slide2:checked~.slider .slides {
-    transform: translate(-680px);
+    transform: translate(-700px);
   }
-
+  #slide3:checked~.slider .slides {
+    transform: translate(-1400px);
+  }
+  #slide4:checked~.slider .slides {
+    transform: translate(-2100px);
+  }
+  #slide5:checked~.slider .slides {
+    transform: translate(-2800px);
+  }
 
