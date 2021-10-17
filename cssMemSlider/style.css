@@ -10,6 +10,9 @@ body {
 
 .slider_wrapper {
     height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     overflow: hidden;
     margin: 50px auto 0;
     position: relative;
@@ -17,6 +20,7 @@ body {
 }
 
 .slider {
+    flex-basis: 100%;
     background-color: #dddddd;
     width: 3400px;
  overflow-y: hidden;
@@ -33,13 +37,24 @@ body {
 
 .slide_photo {
     width: 700px;
-    height: auto;
+    height: 700px;
     
+}
+.caption_wrapper {
+    height: 27px;
+    overflow-y: hidden;
+}
+
+.caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 
 #slide1:checked ~ .control_panel label[for="slide1"] {
     background-color: white;
+    border: 3px solid blue;
   }
 
   #slide1:hover ~ .control_panel label[for="slide1"] {
@@ -51,6 +66,7 @@ body {
 
   #slide2:checked ~ .control_panel label[for="slide2"] {
     background-color: white;
+    border: 3px solid blue;
   }
 
   #slide2:hover ~ .control_panel label[for="slide2"] {
@@ -61,6 +77,7 @@ body {
   }
   #slide3:checked ~ .control_panel label[for="slide3"] {
     background-color: white;
+    border: 3px solid blue;
   }
 
   #slide3:hover ~ .control_panel label[for="slide3"] {
@@ -71,6 +88,7 @@ body {
   }
   #slide4:checked ~ .control_panel label[for="slide4"] {
     background-color: white;
+    border: 3px solid blue;
   }
 
   #slide4:hover ~ .control_panel label[for="slide4"] {
@@ -82,6 +100,7 @@ body {
 
   #slide5:checked ~ .control_panel label[for="slide5"] {
     background-color: white;
+    border: 3px solid blue;
   }
 
   #slide5:hover ~ .control_panel label[for="slide5"] {
@@ -123,3 +142,18 @@ label {
     transform: translate(-2800px);
   }
 
+  #slide1:checked~.caption_wrapper .caption {
+    transform: translateY(0);
+  }
+  #slide2:checked~.caption_wrapper .caption {
+    transform: translateY(-27px);
+  }
+  #slide3:checked~.caption_wrapper .caption {
+    transform: translateY(-54px);
+  }
+  #slide4:checked~.caption_wrapper .caption {
+    transform: translateY(-81px);
+  }
+  #slide5:checked~.caption_wrapper .caption {
+    transform: translateY(-108px);
+  }
