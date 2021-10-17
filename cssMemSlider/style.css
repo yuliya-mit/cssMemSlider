@@ -1,0 +1,35 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.slider_wrapper {
+    height: 700px;
+    margin: 50px auto 0;
+    position: relative;
+    width: 700px;
+}
+
+.slider {
+    background-color: #dddddd;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    height: inherit;
+}
+
+.slider_wrapper > input {
+    display: none;
+}
+
+.slide_photo {
+    width: 700px;
+    height: auto;
+}
+
+.control_panel

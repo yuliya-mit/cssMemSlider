@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>CSS MemSlider</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="slider_wrapper">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <input type="radio" name="point" id="slide4">
+            <input type="radio" name="point" id="slide5">
+            <div class="slider">
+                <div class="slides slide1">
+                    <img class="slide_photo" src="assets/img/1.jpg" alt="">
+                    <p class="caption">какой-то текст</p>
+                </div>
+                <div class="slides slide2">
+                    <img class="slide_photo" src="assets/img/css2.jpg" alt="">
+                    <p class="caption">какой-то текст 2</p>
+                </div>
+                <div class="slides slide3"><img src="assets/img/1.jpg" alt="">
+                    <p class="caption">какой-то текст 3</p>
+                </div>
+                <div class="slides slide4">
+                    <img class="slide_photo" src="assets/img/css2.jpg" alt="">
+                    <p class="caption">какой-то текст 4</p>
+                </div>
+                <div class="slides slide5">
+                    <img class="slide_photo" src="assets/img/1.jpg" alt="">
+                    <p class="caption">какой-то текст 5</p>
+                </div>
+            </div>
+            <div class="control_panel">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+
+
+        </div>
+    </div>
 </body>
 </html>
