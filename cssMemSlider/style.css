@@ -9,15 +9,18 @@ body {
 }
 
 .slider_wrapper {
-    height: 700px;
+    height: 1700px;
+   
     margin: 50px auto 0;
     position: relative;
-    width: 700px;
+    width: 1700px;
 }
 
 .slider {
     background-color: #dddddd;
-    overflow: hidden;
+   /* overflow: hidden;*/
+   display: flex;
+   flex-direction: row;
     position: relative;
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     height: inherit;
@@ -30,6 +33,84 @@ body {
 .slide_photo {
     width: 700px;
     height: auto;
+    
 }
 
-.control_panel
+
+#slide1:checked ~ .control_panel label[for="slide1"] {
+    background-color: white;
+  }
+
+  #slide1:hover ~ .control_panel label[for="slide1"] {
+    background-color: red;
+  }
+  #slide1:active ~ .control_panel label[for="slide1"] {
+    background-color: gray;
+  }
+
+  #slide2:checked ~ .control_panel label[for="slide2"] {
+    background-color: white;
+  }
+
+  #slide2:hover ~ .control_panel label[for="slide2"] {
+    background-color: red;
+  }
+  #slide2:active ~ .control_panel label[for="slide2"] {
+    background-color: gray;
+  }
+  #slide3:checked ~ .control_panel label[for="slide3"] {
+    background-color: white;
+  }
+
+  #slide3:hover ~ .control_panel label[for="slide3"] {
+    background-color: red;
+  }
+  #slide3:active ~ .control_panel label[for="slide3"] {
+    background-color: gray;
+  }
+  #slide4:checked ~ .control_panel label[for="slide4"] {
+    background-color: white;
+  }
+
+  #slide4:hover ~ .control_panel label[for="slide4"] {
+    background-color: red;
+  }
+  #slide4:active ~ .control_panel label[for="slide4"] {
+    background-color: gray;
+  }
+
+  #slide5:checked ~ .control_panel label[for="slide5"] {
+    background-color: white;
+  }
+
+  #slide5:hover ~ .control_panel label[for="slide5"] {
+    background-color: red;
+  }
+  #slide5:active ~ .control_panel label[for="slide5"] {
+    background-color: gray;
+  }
+.control_panel {
+    left: 50%;
+    display: flex;
+    column-gap: 25px;
+}
+
+label {
+    cursor: pointer;
+    
+    height: 20px;
+    
+    width: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    transition: background ease-in-out .5s;
+}
+
+#slide1:checked~.slider .slides {
+    transform: translate(0);
+  }
+  #slide2:checked~.slider .slides {
+    transform: translate(-680px);
+  }
+
+
